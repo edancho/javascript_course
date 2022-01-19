@@ -1,11 +1,11 @@
 const prompt = require("prompt-sync")();
 
-let operation = prompt('Enter an operation ( either +, -, * or / ): ');
+let operation = prompt('Enter an operation ( either +, -, *, / ): ');
 
 let number1 = parseInt(prompt('Enter first number: '));
 let number2 = parseInt(prompt('Enter second number: '));
 
-let result;
+let result = null;
 
 if (operation == '+') {
     result = number1 + number2;
