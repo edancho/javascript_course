@@ -1,0 +1,30 @@
+
+Math:
+rounding: Math.ceil(), math.floor(), math.round()
+constants:Math.E, Math.PI, Math.SQRT2
+Calculation:
+Utility: Math.min(), Math.max()
+
+Date:
+const currentDateTime = new Date()
+const specificDate = new Date([year], [month], [day], [hour], [minute], [second])
+const milli = newD Date([millisecond since Jan 1, 1970])
+
+date.getDay(), dat.getMonth()
+Date.now(), is the current date in milliseconds
+date.toString, gives us string for a current date
+
+Random:
+math.Random
+math.floor
+
+File Reader:
+const fs = require('fs')
+
+console.log(fs.readFileSync('mds/1.md', 'uft8').split('\n'))
+
+const rand = math.random()
+function randRange (min, max) {
+	const RandomNum = Math.floor(rand * (max-min) + min)
+	return output;
+}

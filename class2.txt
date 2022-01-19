@@ -1,0 +1,49 @@
+//print texts
+console.log("hello world");
+//user inputs
+let prompt = require('prompt-sync')();
+
+let userInput = prompt('what is your favorite color: ');
+
+console.log("the inputted text was " + userInput)
+
+// Conditionals
+let prompt = require('prompt-sync')();
+
+const answer = prompt('what is your favorite color: ');
+if (answer =="blue" || answer == "Blue") {
+	console.log("that is correct")
+} else if (3+6==10) {
+	console.log("hello")
+} else {
+	console.log("ok")
+}
+
+switch(answer) {
+	case "blue":
+	case "Blue"
+		console.log("that is correct")
+		break;
+
+}
+*/
+// for Loops
+
+let prompt = require("prompt-sync")();
+let wordArr = []
+for (let i=0; i<10; i++) {
+	wordArr.push(prompt("tell me word #" + i + ": "))
+}
+console.log(wordArr)
+//while Loops
+
+//Functions
+let prompt = require("prompt-sync")();
+function getThreeWords() {
+	let wordArr = []
+	for(let i = 0; i<3; i++){
+		wordArr.push(prompt('input word ${i}: '))
+	}
+	return wordArr
+}
+console.log("here's three words: ", getThreeWords())
