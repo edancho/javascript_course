@@ -12,7 +12,7 @@ const numbers = data.split("\n")
 function lift(){
 
     for(let i =0; i < numbers.length; i++){
-        if(numbers[i] < numbers[i+1]) {
+        if(parseInt(numbers[i]) < parseInt(numbers[i+1])) {
             jumps ++;
         }
      }
