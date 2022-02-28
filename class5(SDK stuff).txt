@@ -1,0 +1,8 @@
+async function getHockeyData(nhl) {
+    let resp = await axios.get(link)
+    let data = resp.data
+    return{
+        data points that I need
+    }
+}
+

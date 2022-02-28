@@ -1,0 +1,21 @@
+BUILT IN WAY
+how to use API: 
+const https = require('https' or 'http') --> make sure that the API url matches with the require
+
+https.get("API url)
+
+let dittoData;
+let data = '';
+response.on('data', (chunk) => {
+    data += chunk;
+
+});
+
+response.on('end', (_) => {
+    //console.log(JSON.parse(data));
+    dittoData = JSON.parse(data);
+    console.log(dittoData.abilities)
+})
+
+
+

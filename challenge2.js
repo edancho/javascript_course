@@ -36,8 +36,8 @@ function secondPos(startX, startY) {
     let xPos2 = startX;
     let yPos2 = startY;
     for (i = 0; i < commands.length - 1; i++) {
-        let currentpos = commands[i];
-        let motion = currentpos.split(" ");
+        let currentPos = commands[i];
+        let motion = currentPos.split(" ");
         switch (motion[0]) {
             case "forward":
                 xPos2 += parseInt(motion[1]);
