@@ -6,13 +6,21 @@ const prompt = promptPKG();
 //goal: find the average number of goals for a player in the nhl
 //goal: find the average number of games played for a player in the nhl
 
-let operation = prompt('Please enter a player id(8478470-8478480)');
+let operation = prompt('Please enter a player id(8478470-8478480): ');
 
 async function getPlayer(id) {
     let rosterLength = 28;
     let resp = await axios.get('https://statsapi.web.nhl.com/api/v1/people/' + id)
-    let data = resp.data
-    console.log(data);
+    let data = resp.data.people[0];
+    return{
+        fullName: data.fullName,
+        height: data.height,
+        weight: data.weight,
+    }
 }
 
-getPlayer(operation);
+let playerData = await getPlayer(operation);
+
+console.log('the weight is', playerData.weight)
+console.log('the height is', playerData.height)
+

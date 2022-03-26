@@ -11,12 +11,6 @@ async function getPlayer(id) {
         fullName: data.name   
     }
 }
-async function getPlayerStats(){
-    let resp = await axios.get('https://statsapi.web.nhl.com/api/v1/people/8447400/stats')
-    let data = resp.data
-    console.log(data)
-    
-}
-console.log(await getPlayerStats());
+getPlayer(id)
 
 
