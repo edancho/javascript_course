@@ -21,6 +21,7 @@ async function getPlayer(id) {
 
 let playerData = await getPlayer(operation);
 
-console.log('the weight is', playerData.weight)
-console.log('the height is', playerData.height)
+console.log('Name: ', playerData.fullName)
+console.log('Weight: ', playerData.weight)
+console.log('Height: ', playerData.height)
 
